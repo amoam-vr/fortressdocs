@@ -6,7 +6,9 @@ This grip lets you slide your hand across it while not holding the **GRIP** butt
 While holding the **GRIP** button, your hand stays fixed at its current position along the cylinder grip.
 
 ## Requirements
-A `Cylinder Grip` **must** have a `Capsule Collider` on the same `GameObject` with `Is Trigger` usually set to `True`, and `Direction` usually set to `Z-Axis`, although these values are not strictly required. The `GameObject` **must** be set to the `Interactable` layer.
+A `Cylinder Grip` **must** have a `Capsule Collider` on the same `GameObject` with `Is Trigger` usually set to `True`, and `Direction` usually set to `Z-Axis`, although these values are not strictly required. The `GameObject` **must** be set to the `Interactable` layer (internally 15). 
+
+Additionally, an `Interactable Host` is required beside a `Marrow Entity` on a parent for grips to work.
 
 ## Example
 <img src="../examplescript_cylinder_grip.png" alt="Example Script: Cylinder Grip" width="50%">
@@ -21,27 +23,27 @@ A `Cylinder Grip` **must** have a `Capsule Collider` on the same `GameObject` wi
   <tr>
     <td>Is Throwable</td>
     <td><code>bool</code></td>
-    <td>Usually always <code>true</code>. <b style="color: #ff0000">DOES THIS DO ANYTHING WHEN FALSE?</b></td>
+    <td>Usually always <code>true</code>. <b style="color: #e2ce46">DOES THIS DO ANYTHING WHEN FALSE?</b></td>
   </tr>
   <tr>
     <td>Ignore Grip Target On Attach</td>
     <td><code>bool</code></td>
-    <td>If <code>true</code>, the <code>Transform</code> this grip is on will be used when determining the position of your hand for the grip instead of the assigned Target value. <b style="color: #ff0000">NEEDS CONFIRMATION</b></td>
+    <td>If <code>true</code>, the <code>Transform</code> this grip is on will be used when determining the position of your hand for the grip instead of the assigned Target value. <b style="color: #e2ce46">NEEDS CONFIRMATION</b></td>
   </tr>
   <tr>
     <td>Additional Grip Colliders</td>
     <td><code>Collider[]</code></td>
-    <td>While this grip is held, the <code>Collider</code>s in this list won't collide with your body. <b style="color: #ff0000">NEEDS CONFIRMATION</b></td>
+    <td>While this grip is held, the <code>Collider</code>s in this list won't collide with your body. <b style="color: #e2ce46">NEEDS CONFIRMATION</b></td>
   </tr>
   <tr>
     <td>Handle Amplify Curve</td>
     <td><code>AnimationCurve</code></td>
-    <td><b style="color: #ff0000">UNKNOWN</b></td>
+    <td><b style="color: #e2ce46">UNKNOWN</b></td>
   </tr>
   <tr>
     <td>Hand Pose</td>
     <td><code>HandPose</code></td>
-    <td>When this grip is held, your hand will match the pose assigned.</td>
+    <td>When this grip is held, your hand will match the pose assigned. <b style="color: #e2ce46">NOTE: Some HandPoses that come with the SDK can break the grip completely (Found by Rusky)</b>.</td>
   </tr>
   <tr>
     <td>Primary Movement Axis</td>
@@ -56,7 +58,7 @@ A `Cylinder Grip` **must** have a `Capsule Collider` on the same `GameObject` wi
   <tr>
     <td>Grip Options</td>
     <td><code>InteractionOptions</code></td>
-    <td>See <b style="color: #ff0000">InteractionOptions</b>.</td>
+    <td>See <b style="color: #e2ce46">InteractionOptions</b>.</td>
   </tr>
   <tr>
     <td>Priority</td>
@@ -81,7 +83,7 @@ A `Cylinder Grip` **must** have a `Capsule Collider` on the same `GameObject` wi
   <tr>
     <td>Radius</td>
     <td><code>float</code></td>
-    <td>This value should match the <code>Radius</code> value of the <code>Capsule Collider</code> this grip belongs to.</td>
+    <td>This value should roughly match the <code>Radius</code> value of the <code>Capsule Collider</code> this grip belongs to.</td>
   </tr>
   <tr>
     <td>Target Transform</td>
@@ -96,36 +98,71 @@ A `Cylinder Grip` **must** have a `Capsule Collider` on the same `GameObject` wi
   <tr>
     <td>Rotation Priority Buffer</td>
     <td><code>float</code></td>
-    <td><b style="color: #ff0000">UNKNOWN</b></td>
+    <td><b style="color: #e2ce46">UNKNOWN</b></td>
   </tr>
   <tr>
     <td>Hand Pose On Flipped Primary Axis</td>
     <td><code>HandPose</code></td>
-    <td>If you hold the grip upside down, this pose will be used rather than the normal assigned pose.</td>
+    <td>If you hold the grip upside down, this pose will be used rather than the normal assigned pose. <b style="color: #e2ce46">NEEDS CONFIRMATION</b></td>
   </tr>
   <tr>
     <td>Target Flip On Primary Axis</td>
     <td><code>bool</code></td>
-    <td><b style="color: #ff0000">UNKNOWN</b></td>
+    <td><b style="color: #e2ce46">UNKNOWN</b></td>
   </tr>
   <tr>
     <td>Target Flip On Tertiary Axis</td>
     <td><code>bool</code></td>
-    <td><b style="color: #ff0000">UNKNOWN</b></td>
+    <td><b style="color: #e2ce46">UNKNOWN</b></td>
   </tr>
   <tr>
     <td>Dynamic Friction</td>
     <td><code>float</code></td>
-    <td><b style="color: #ff0000">ASSUMPTION</b> When you hold this grip with only <b>TRIGGER</b>, this is how much friction your hand receives when moving it along the grip.</td>
+    <td>When you hold this grip with only <b>TRIGGER</b>, this is how much friction your hand receives when moving it along the grip. <b style="color: #e2ce46">NEEDS CONFIRMATION</b></td>
   </tr>
   <tr>
     <td>Static Friction</td>
     <td><code>float</code></td>
-    <td><b style="color: #ff0000">ASSUMPTION</b> When you hold this grip with <b>GRIP</b>, this is how much friction your hand receives when moving it along the grip.</td>
+    <td>When you hold this grip with <b>GRIP</b>, this is how much friction your hand receives when moving it along the grip. <b style="color: #e2ce46">NEEDS CONFIRMATION</b></td>
   </tr>
   <tr>
     <td>Limit</td>
     <td><code>float</code></td>
     <td>This value should match the <code>Height</code> value of the <code>Capsule Collider</code> this grip belongs to divided by 2. This value determines how far you can slide your hands up and down the grip.</td>
+  </tr>
+  <tr>
+    <td>Has Cap A</td>
+    <td><code>bool</code></td>
+    <td><b style="color: #e2ce46">UNKNOWN</b></td>
+  </tr>
+  <tr>
+    <td>Has Cap B</td>
+    <td><code>bool</code></td>
+    <td><b style="color: #e2ce46">UNKNOWN</b></td>
+  </tr>
+  <tr>
+    <td>Ignore Flip On Z</td>
+    <td><code>bool</code></td>
+    <td>If <code>true</code>, this object cannot be gripped upside down. <b style="color: #e2ce46">NEEDS CONFIRMATION</b></td>
+  </tr>
+  <tr>
+    <td>Rotational Friction Mult</td>
+    <td><code>float</code></td>
+    <td><b style="color: #e2ce46">UNKNOWN</b></td>
+  </tr>
+  <tr>
+    <td>Aspect Ratio</td>
+    <td><code>float</code></td>
+    <td><b style="color: #e2ce46">UNKNOWN</b></td>
+  </tr>
+  <tr>
+    <td>Variable Radius</td>
+    <td><code>bool</code></td>
+    <td>If <code>true</code>, this grip will use the <code>Radius Curve</code> value to determine the grip radius along the object.</td>
+  </tr>
+  <tr>
+    <td>Radius Curve</td>
+    <td><code>AnimationCurve</code></td>
+    <td>As you slide your hand across the grip, this curve determines the radius of the grip at that position by overriding the <code>Radius</code> property. The left side of the curve (where Time = 0) is the bottom of the grip, and the right side of the curve (where Time = 1) is the top of the grip.</td>
   </tr>
 </table>
