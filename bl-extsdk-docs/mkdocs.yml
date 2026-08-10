@@ -3,8 +3,9 @@ site_url: https://amoam-vr.github.io/fortressdocs
 site_name: Fortress Docs
 nav:
   - Home: index.md
-  - Scripts:
+  - Extended SDK Scripts:
     - Cylinder Grip: cylindergrip.md
+    - Stab Slash: stabslash.md
 theme:
   name: material
   custom_dir: overrides

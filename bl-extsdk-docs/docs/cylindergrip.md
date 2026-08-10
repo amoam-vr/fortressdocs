@@ -5,9 +5,6 @@ This grip lets you slide your hand across it while not holding the **GRIP** butt
 
 While holding the **GRIP** button, your hand stays fixed at its current position along the cylinder grip.
 
-## Usage
-Typically used on sword handles, staff handles, ladder rungs, generally anything rod-shaped to allow players to grip them. 
-
 ## Requirements
 A `Cylinder Grip` **must** have a `Capsule Collider` on the same `GameObject` with `Is Trigger` typically set to `True`, and `Direction` typically set to `Z-Axis`, although these values are not strictly required. The `GameObject` **must** be set to the `Interactable` layer.
 

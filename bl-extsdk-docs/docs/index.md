@@ -7,10 +7,9 @@ This documentation will attempt to list everything relating to all scripts inclu
 
 Each script documentation will have this structure: 
 <ul>
-    <li>What the script does</li>
-    <li>How it should/can be used</li>
+    <li>What the script does and how it's used</li>
     <li>Script requirements</li>
-    <li>An example of the script</li>
-    <li>All the visible properties and what they affect</li>
+    <li>An image example of the script</li>
+    <li>All the usable properties and what they affect</li>
     <li>Other useful advice regarding the script</li>
 </ul>
