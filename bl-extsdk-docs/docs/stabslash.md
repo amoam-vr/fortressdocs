@@ -1,5 +1,5 @@
 # Stab Slash
-Gives a `Marrow Entity` (a spawnable) the ability to stab and damage enemies and certain spawnables. Also can be used to inflict blunt damage.
+Gives a `Marrow Entity` (a spawnable) the ability to stab and damage enemies and certain spawnables. Can also be used to inflict blunt damage.
 
 ## Requirements
 A `Stab Slash` **must** be on the same `GameObject` as a `Marrow Entity`.
@@ -12,6 +12,6 @@ A `Stab Slash` **must** be on the same `GameObject` as a `Marrow Entity`.
   <tr>
     <td><b>Property Name</b></td>
     <td><b>Property Type</b></td>
-    <td><b>Property Usage</b></td>
+    <td><b>Property Description</b></td>
   </tr>
 </table>
