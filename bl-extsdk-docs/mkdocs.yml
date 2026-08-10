@@ -1,7 +1,5 @@
-<<<<<<< Updated upstream
 site_name: Extended SDK Documentation
 site_url: https://amoam-vr.github.io/fortressdocs
-=======
 site_name: Fortress Docs
 nav:
   - Home: index.md
@@ -10,4 +8,3 @@ nav:
 theme:
   name: material
   custom_dir: overrides
->>>>>>> Stashed changes
