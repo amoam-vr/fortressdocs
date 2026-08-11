@@ -2,14 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://amoam-vr.github.io/fortressdocs/</loc>
-         <lastmod>2026-08-10</lastmod>
+         <lastmod>2026-08-11</lastmod>
     </url>
     <url>
          <loc>https://amoam-vr.github.io/fortressdocs/cylindergrip/</loc>
-         <lastmod>2026-08-10</lastmod>
+         <lastmod>2026-08-11</lastmod>
+    </url>
+    <url>
+         <loc>https://amoam-vr.github.io/fortressdocs/evilsealtersscript/</loc>
+         <lastmod>2026-08-11</lastmod>
     </url>
     <url>
          <loc>https://amoam-vr.github.io/fortressdocs/stabslash/</loc>
-         <lastmod>2026-08-10</lastmod>
+         <lastmod>2026-08-11</lastmod>
     </url>
 </urlset>
