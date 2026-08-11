@@ -44,4 +44,4 @@ A `Stab Slash` **must** be on the same `GameObject` as a `Marrow Entity`.
 </table>
 
 ## Example
-<img src="../examplescript_stab_slash.png" alt="Example Script: Stab Slash" width="50%">
+<img src="../media/examplescript_stab_slash.png" alt="Example Script: Stab Slash" width="50%">

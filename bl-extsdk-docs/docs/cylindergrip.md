@@ -165,4 +165,4 @@ Additionally, an `Interactable Host` is required beside a `Marrow Entity` on a p
 </table>
 
 ## Example
-<img src="../examplescript_cylinder_grip.png" alt="Example Script: Cylinder Grip" width="50%">
+<img src="../media/examplescript_cylinder_grip.png" alt="Example Script: Cylinder Grip" width="50%">
