@@ -6,6 +6,7 @@ nav:
   - Extended SDK Scripts:
     - Cylinder Grip: cylindergrip.md
     - Stab Slash: stabslash.md
+    - Evil Sealters Script: evilsealtersscript.md
 theme:
   name: material
   custom_dir: overrides
