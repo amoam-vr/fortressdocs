@@ -10,14 +10,11 @@ A `Cylinder Grip` **must** have a `Capsule Collider` on the same `GameObject` wi
 
 Additionally, an `Interactable Host` is required beside a `Marrow Entity` on a parent for grips to work.
 
-## Example
-<img src="../examplescript_cylinder_grip.png" alt="Example Script: Cylinder Grip" width="50%">
-
 ## Properties
 <table>
   <tr>
-    <td><b>Property Name</b></td>
-    <td><b>Property Type</b></td>
+    <td><b>Property Name</b><br><b style="color:#000000">______________________</b></td>
+    <td><b>Property Type</b><br><b style="color:#000000">______________________</b></td>
     <td><b>Property Description</b></td>
   </tr>
   <tr>
@@ -43,7 +40,7 @@ Additionally, an `Interactable Host` is required beside a `Marrow Entity` on a p
   <tr>
     <td>Hand Pose</td>
     <td><code>HandPose</code></td>
-    <td>When this grip is held, your hand will match the pose assigned. <b style="color: #e2ce46">NOTE: Some HandPoses that come with the SDK can break the grip completely (Found by Rusky)</b>.</td>
+    <td>When this grip is held, your hand will match the pose assigned. <b style="color: #e2ce46">NOTE: Some HandPoses that come with the SDK can break the grip completely (Found by Rusky).</b></td>
   </tr>
   <tr>
     <td>Primary Movement Axis</td>
@@ -166,3 +163,6 @@ Additionally, an `Interactable Host` is required beside a `Marrow Entity` on a p
     <td>As you slide your hand across the grip, this curve determines the radius of the grip at that position by overriding the <code>Radius</code> property. The left side of the curve (where Time = 0) is the bottom of the grip, and the right side of the curve (where Time = 1) is the top of the grip.</td>
   </tr>
 </table>
+
+## Example
+<img src="../examplescript_cylinder_grip.png" alt="Example Script: Cylinder Grip" width="50%">
