@@ -13,8 +13,8 @@ Additionally, an `Interactable Host` is required beside a `Marrow Entity` on a p
 ## Properties
 <table>
   <tr>
-    <td><b>Property Name</b><br><b style="color:#000000">______________________</b></td>
-    <td><b>Property Type</b><br><b style="color:#000000">______________________</b></td>
+    <td><b>Property Name</b><br><b style="color: #00000000">______________________</b></td>
+    <td><b>Property Type</b><br><b style="color: #00000000">______________________</b></td>
     <td><b>Property Description</b></td>
   </tr>
   <tr>
